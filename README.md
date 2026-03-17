@@ -11,3 +11,5 @@ test stand for YC backup whith terraform
 - Работает по средствоми агента (Для установки curl https://storage.yandexcloud.net/backup-distributions/agent_installer.sh | sudo bash)
 - Восстанавлить данные можно только при помощи cloud_backup в яндексе
 - В файлах terrafrom написаны комментарии на основыне параметры 
+## Как добавить к существуещему интаснсу
+- https://yandex.cloud/ru/docs/backup/operations/connect-vm-linux#tf_1
