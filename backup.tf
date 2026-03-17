@@ -45,7 +45,7 @@ resource "yandex_resourcemanager_folder_iam_member" "test_binding" {
   member    = "serviceAccount:${yandex_iam_service_account.test_sa.id}"
 }
 
-# Полная настройка backup policy 
+# Полная настройка backup policy https://yandex.cloud/ru/docs/backup/concepts/policy
 resource "yandex_backup_policy" "my_policy" {
   archive_name                      = "[Machine Name]-[Plan ID]-[Unique ID]a"
   cbt                               = "USE_IF_ENABLED" # Настройки отслеживания изменений блоков
