@@ -97,7 +97,7 @@ resource "yandex_backup_policy" "my_policy" {
         backup_sets {
         execute_by_time {
         type        = "DAILY"
-        repeat_at   = ["9:50"]
+        repeat_at   = ["9:50"] # Резервные копии создаются по локальному времени ВМ или сервера BareMetal. Возможно небольшое отставание от расписания в зависимости от текущей нагрузки на сервис.
 
         }
         }
