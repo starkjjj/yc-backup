@@ -1,0 +1,16 @@
+#cloud-config
+users:
+  - name: nikita
+    groups: sudo
+    shell: /bin/bash
+    sudo: 'ALL=(ALL) NOPASSWD:ALL'
+    ssh_authorized_keys:
+        - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHGA9w6x6ufP/bZj523+4czGDUppqBcngh7kZ1x+8t5Y nikitavenger321@gmail.com
+
+packages:
+  - curl
+  - perl
+  - jq
+
+runcmd:
+  - curl https://storage.yandexcloud.net/backup-distributions/agent_installer.sh | sudo bash
